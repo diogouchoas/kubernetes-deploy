@@ -241,6 +241,8 @@ before the deployment is considered successful.
   that use the `RollingUpdate` strategy.
   - Percent (e.g. 90%): The deploy is successful when the number of new pods that are ready is equal to
   `spec.replicas` * Percent.
+- `kubernetes-deploy.shopify.io/no-rollout-verification`: When set on a resource the deploy will be
+considered successful even if the resource fails to deploy.
 
 ### Running tasks at the beginning of a deploy
 

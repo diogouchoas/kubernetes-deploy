@@ -1,4 +1,8 @@
 ### Master
+*Features*
+- Make it possible to skip rollout verification for a single resouce via the
+`kubernetes-deploy.shopify.io/no-rollout-verification` annotation
+([#282](https://github.com/Shopify/kubernetes-deploy/pull/282))
 
 *Bug Fixes*
 - Prevent calling sleep with a negative value ([#273](https://github.com/Shopify/kubernetes-deploy/pull/273))
