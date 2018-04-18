@@ -352,7 +352,9 @@ module KubernetesDeploy
     end
 
     def statsd_tags
-      status = if deploy_failed?
+      status = if skip_rollout_verification?
+        "ignored"
+      elsif deploy_failed?
         "failure"
       elsif deploy_timed_out?
         "timeout"
